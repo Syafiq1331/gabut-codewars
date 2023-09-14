@@ -18,7 +18,11 @@ The elements in the returned array should be in the same order as in the initial
 
 function gooseFilter(birds) {
   var geese = ["African", "Roman Tufted", "Toulouse", "Pilgrim", "Steinbacher"];
-
   // singkatnya ketika array dari bird itu tidak sama dengan array dari geese maka akan me-return bird saja
 
+  const result = birds.filter(itemA => !geese.includes(itemA));
+
+  return result
 };
+
+console.log(gooseFilter(["Mallard", "Hook Bill", "African", "Crested", "Pilgrim", "Toulouse", "Blue Swedish"]))
